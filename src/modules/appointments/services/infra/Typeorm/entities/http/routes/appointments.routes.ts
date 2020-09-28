@@ -2,10 +2,10 @@ import { Router } from 'express';
 import { parseISO } from 'date-fns';
 import { getCustomRepository } from 'typeorm';
 
-import AppointmentsRepository from '../repositories/AppointmentsRepository';
-import CreateAppointmentService from '../services/CreateAppointmentService';
+import AppointmentsRepository from '../../../repositories/AppointmentsRepository';
+import CreateAppointmentService from '../../../../../CreateAppointmentService';
 
-import ensureAuthenticated from '../middlewares/ensureAuthenticated';
+import ensureAuthenticated from '../../../../../../../users/infra/Typeorm/entities/http/middlewares/ensureAuthenticated';
 
 const appointmentsRouter = Router();
 
@@ -13,7 +13,7 @@ appointmentsRouter.use(ensureAuthenticated);
 
 appointmentsRouter.get('/', async (request, response) => {
     const appointmentsRepository = getCustomRepository(AppointmentsRepository);
-    const appointments = await appointmentsRepository.find();
+    const appointments = 0 //= await appointmentsRepository.find();
 
     return response.json(appointments);
 })

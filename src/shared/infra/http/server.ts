@@ -6,10 +6,10 @@ import 'express-async-errors';
 
 import routes from './routes';
 import bodyParser from 'body-parser';
-import uploadConfig from './config/upload';
-import AppError from './errors/AppError';
+import uploadConfig from '@config/upload';
+import AppError from '../../errors/AppError';
 
-import './database';
+import '../Typeorm';
 
 const app = express();
 const port = 3334;
