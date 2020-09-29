@@ -10,6 +10,7 @@ import uploadConfig from '@config/upload';
 import AppError from '../../errors/AppError';
 
 import '../Typeorm';
+import '@shared/container';
 
 const app = express();
 const port = 3334;
