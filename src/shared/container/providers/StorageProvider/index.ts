@@ -4,7 +4,7 @@ import IStorageProvider from './models/IStorageProvider';
 import DiskStorageProvider from './implementations/DiskStorageProvider';
 
 import IMailProvider from './MailProvider/models/IMailProvider';
-import EtherealMailProvider from './MailProvider/implementations/EtherealMainProvider';
+import EtherealMailProvider from './MailProvider/implementations/EtherealMailProvider';
 
 import IMailTemplateProvider from '../MailTemplateProvider/models/IMailTemplateProvider';
 import HandlebarsMailTemplateProvider from '../MailTemplateProvider/implementations/HandlebarsMailTemplateProvider';

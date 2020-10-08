@@ -8,7 +8,7 @@ import IMailTemplateProvider from '../../../MailTemplateProvider/models/IMailTem
 
 
 @injectable()
-export default class EtherealMainProvider implements IMailProvider {
+export default class EtherealMailProvider implements IMailProvider {
     private client: Transporter;
 
     constructor(
